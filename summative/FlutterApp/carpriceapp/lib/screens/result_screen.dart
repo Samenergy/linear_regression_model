@@ -99,7 +99,7 @@ class CarPriceScreen extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => CarInputApp()),
+                    MaterialPageRoute(builder: (context) => const CarInputApp()),
                   );
                 },
                 style: ElevatedButton.styleFrom(
