@@ -81,7 +81,7 @@ The backend, developed using **FastAPI**, serves the Random Forest model for car
    uvicorn app:app --reload
    ```
 
-   The API will be available at `https://linear-regression-model-286l.onrender.com`.
+   The API will be available at `https://linear-regression-model-286l.onrender.com/docs`.
 
 4. The backend provides an endpoint to predict the car price based on the input features:
 
