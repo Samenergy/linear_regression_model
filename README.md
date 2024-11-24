@@ -21,6 +21,12 @@ linear_regression_model/
 │   │   ├── carpriceapp            # Flutter app for user interaction and API requests
 ```
 
+## Demonstration Video
+
+Watch the full demonstration of how the application works:  
+[![Car Price Prediction Demo](https://pngtree.com/freepng/play-video-icon-graphic-design-template-vector_3990515.html)](https://vimeo.com/1032811199?share=copy)
+
+
 ## Getting Started
 
 ### 1. **Machine Learning Model**
