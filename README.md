@@ -24,7 +24,9 @@ linear_regression_model/
 ## Demonstration Video
 
 Watch the full demonstration of how the application works:  
-[![Car Price Prediction Demo](https://e7.pngegg.com/pngimages/496/939/png-clipart-youtube-logo-youtube-play-button-computer-icons-icon-library-video-play-miscellaneous-angle-thumbnail.png)](https://vimeo.com/1032811199?share=copy)
+<a href="https://vimeo.com/1032811199?share=copy">
+  <img src="https://e7.pngegg.com/pngimages/496/939/png-clipart-youtube-logo-youtube-play-button-computer-icons-icon-library-video-play-miscellaneous-angle-thumbnail.png" alt="Car Price Prediction Demo" style="width:10cm;">
+</a>
 
 
 ## Getting Started
