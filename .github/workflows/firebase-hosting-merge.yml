@@ -5,20 +5,27 @@ name: Deploy to Firebase Hosting on merge
 on:
   push:
     branches:
-      - main # Deploy when changes are pushed to main
+      - main  # Deploy when changes are pushed to main
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4 # Check out the repository
+      - uses: actions/checkout@v4  # Check out the repository
+
+      # Set up Flutter environment
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: stable
+          flutter-version: stable  # Ensure you're using the stable version of Flutter
+
+      # Build the Flutter app for the web
       - name: Build Flutter web app
         run: |
-          cd summative/FlutterApp/carpriceapp  # Change to the correct directory
-          flutter build web  # Build Flutter for web
+          cd summative/FlutterApp/carpriceapp  # Navigate to your Flutter app directory
+          flutter pub get  # Get dependencies
+          flutter build web  # Build the web version of the Flutter app
+
+      # Deploy the web build to Firebase Hosting
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
