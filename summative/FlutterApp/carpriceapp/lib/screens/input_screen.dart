@@ -226,7 +226,7 @@ class _CarInputScreenState extends State<CarInputScreen> {
     };
 
     try {
-      final url = Uri.parse('http://10.0.2.2:8000/predict/');
+      final url = Uri.parse('https://linear-regression-model-286l.onrender.com/predict/');
       final response = await http.post(
         url,
         headers: {"Content-Type": "application/json"},
